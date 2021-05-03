@@ -1,0 +1,23 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "swiper": "^6.5.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirou0907/Airbnb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shirou0907/Airbnb/issues"
+  },
+  "homepage": "https://github.com/shirou0907/Airbnb#readme"
+}

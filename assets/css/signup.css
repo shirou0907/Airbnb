@@ -1,0 +1,97 @@
+.app {
+    background: url(../img/sign-up.jpg) center / contain;
+}
+
+.nav.row {
+    position: unset;
+}
+
+.container {
+    padding: 60px;
+}
+
+.sign-in {
+    min-height: 480px;
+    height: 600px;
+    border-radius: unset;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 0 1px #ccc;
+
+}
+
+.sign-in h1 {
+    margin-bottom: 60px;
+}
+
+.sign-in__form-1 span {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    color: #333;
+    margin-top: 20px;
+}
+
+.sign-in__form-2 {
+    display: none;
+}
+
+.login-btn {
+    cursor: pointer;
+}
+
+.complete {
+    display: none;
+}
+
+.overlay {
+    background: linear-gradient(to right, #ff0c65 , #c711b1);
+    min-height: 480px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 1px #ccc;
+    overflow: hidden;
+}
+
+.overlay-content {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    animation: lightSpeedInRight .6s;
+}
+
+.overlay-content.o-2 {
+    display: none;
+}
+
+.overlay-content h1 {
+    font-size: 48px;
+}
+
+.overlay-content p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.ghost {
+    margin-top: 16px;
+    padding: 10px 26px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    
+}
+
+.ghost:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+    opacity: 0.7;
+}

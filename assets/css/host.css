@@ -1,0 +1,497 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    --primary-color: #FF385C;
+    --host-slide-height: 80px;
+}
+
+
+
+.header-host {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-link {
+   text-decoration: none;
+   color: #000;
+   font-size: 16px;
+}
+
+.header-link:hover {
+    color: #FF385C;
+    text-decoration: underline;
+ }
+
+.header-creat {
+    position: relative;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.header-creat::after {
+    content: "Creat your listing";
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #FF385C, #BD1E59);
+    transform: translateX(-100%);
+    transition: all ease-in .3s;
+}
+
+.header-creat:hover::after {
+    transform: translateX(0%);
+}
+
+.header-creat:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.host-title {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 90px 0 30px 0;
+}
+
+.host-slide {
+    background: url('../img/host-silde.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    padding: 0 40px;
+    position: relative;
+}
+
+.host-slide__logo {
+    color: #fff;
+    height: var(--host-slide-height);
+    display: flex;
+    align-items: center;
+}
+
+.host-slide__content {
+    text-shadow: 0 1px 2px #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 2*var(--host-slide-height));   
+    width: 50%;
+}
+
+.host-slide__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.host-slide__content span {
+    font-size: 60px;
+    font-weight: 500;
+    display: block;
+    padding: 20px 0;
+}
+
+.host__slide-link {
+    margin-top: 40px;
+}
+
+.host__slide-btn {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #FF385C, #BD1E59);
+}
+
+.host__slide-btn:hover {
+    filter: brightness(1.2);
+}
+
+.host-slide__content p {
+    font-size: 22px;
+    margin: 0;
+}
+
+.host-quote {
+    padding: 90px 0;
+    
+}
+
+.host-quote__img img {
+    display: block;
+    width: 100%;
+    padding-left: -10px;
+}
+
+.host-quote__text {
+    padding-top: 40px;
+}
+
+.host-quote__text span {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.host-quote__text p {
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.host-quote__text a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.host-quote__text a:hover {
+    color: var(--primary-color);
+}
+
+.host-hosts {
+    margin-bottom: 90px;
+}
+
+.host-feel {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+    /* display: none; */
+    cursor: pointer;
+    animation: fadeIn ease-in .8s;
+}
+
+.swiper-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 90px;
+}
+
+.swiper-wrapper {
+    box-sizing: border-box !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-color) !important;
+    opacity: .5;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: var(--primary-color) !important;
+}
+
+.host-feel__img {
+    height: 100%;
+    width: 50%;
+}
+
+.host-feel__content {
+    width: 50%;
+    background-color: #f5f5f5;
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.host-feel__content span {
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+    
+}
+
+.host-feel__content p {
+    margin: 0;
+}
+
+.host-ads {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.host-ads img {
+    display: block;
+    width: 100%;
+}
+
+.host-ads__content {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    letter-spacing: 3px;
+    color: #fff;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 1px 2px #000;
+
+}
+
+.host-ads__content span {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.host-ads__content p {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.host-ads__content #cost {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+    color: #FF385C;
+}
+
+.swiper-work {
+    width: 100%;
+    height: 100%;
+}
+
+.host-works {
+    flex-wrap: nowrap;
+}
+
+.host-works a {
+    text-decoration: none;
+    color: #000;
+}
+
+.host-works__img {
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 220px;
+}
+
+.host-works__content {
+
+}
+
+.host-works__content span {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+}
+
+.host-works__content p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.host-ask {
+    margin: 60px 0;
+    width: unset;
+    position: relative;
+}
+
+.host-ask__img {
+    width: 100%;
+}
+
+.host-ask__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 25%;
+    left: 90px;
+    height: 50%;
+    width: 320px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius:10px;
+}
+
+.host-ask__content span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.host-ask__content h2 {
+    margin: 0;
+}
+
+.host-ask__content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.host-ask__content a {
+    font-size: 16px;
+    padding: 12px 12px;
+    width: 60%;
+    text-align: center;
+    background: unset;
+    background-color: #000;
+}
+
+.host-ask__host {
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+}
+
+.host-ask__host span {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.host-ask__host p {
+    margin: 0;
+    font-size: 14px;
+    
+}
+
+.host-support__content {
+    margin-right: 40px;
+    margin-top: 20px;
+
+}
+
+.host-support__content span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.host-support__content p {
+    color: #333;
+    line-height: 28px;
+}
+
+.host-support__content a {
+    color: #666;
+    font-size: 14px;
+}
+
+.host-end {
+    margin-top: 60px;
+    padding-top: 50%;
+    background: url('/assets/img/host-end.jpg') center / cover no-repeat;
+}
+
+.host-find {
+    padding: 120px 80px;
+    background-color: #f5f5f5;
+}
+
+.host-find__content {
+    padding-right: 60px;
+}
+
+.host-find__content h3 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.host-find__content p {
+    color: #333;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.host-form {
+    width: 100%;
+    padding: 14px 24px;
+    outline: none;
+    line-height: 20px;
+}
+
+.host-form:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.host-form:nth-child(2){
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.host-find__check {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.host-find__check span {
+    font-size: 12px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.host-find__check i {
+    font-size: 24px;
+}
+
+.host-find__submit {
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.private-policy {
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.private-policy a {
+    color: #000;
+    font-weight: bold;
+}
+
+.footer {
+    flex-direction: column;
+}
